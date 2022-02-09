@@ -1,0 +1,25 @@
+// Jhair.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+float r,a,pi = 3.141516;
+
+
+void main()
+{
+	cout<<"===== Bienvenido al calculador de areas de circulos ====="<<endl;
+	cout<<endl;
+	cout<<"		Ingrese el radio: ";cin>>r;
+	cout<<endl;
+
+	a = pi*r*r;
+	
+	cout<<"	  El área es: "<<a;
+	getch();
+	
+}
