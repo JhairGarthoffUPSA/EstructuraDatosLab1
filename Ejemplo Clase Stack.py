@@ -18,8 +18,27 @@ class Stack:
         return len(self.items)
 
 s = Stack() #Creando un objeto de la clase Stack.
+n = int(input("Ingrese la cantidad de números que desea ingresar: "))
+
+for i in range(n):
+    x=int(input("Ingrese un número: "))
+    s.push(x)
+
+if s.isEmpty() == False:
+    for i in range(n):
+        y=s.pop()
+        print(y)
+
 print(s.isEmpty()) #True o False
-s.push(100) #Adiciona un valor (100)
-s.push(200) #Adiciona un valor (200)
-s.pop()     #Quita el último valor ingresado (200)
+
+#s.push(100) #Adiciona un valor (100)
+#s.push(200) #Adiciona un valor (200)
+
+#if (Stack==[]):
+#    print("El Stack ya está vacío.")
+
+#else:
+#    s.pop()    
+
 s.size()    #Muestra el tamaño (1)
+
